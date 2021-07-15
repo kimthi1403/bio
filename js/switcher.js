@@ -77,3 +77,15 @@ function updateIconAndLogo() {
         dayNightLogo.querySelector("img:last-child").classList.add("deactivate");
     }
 }
+/* ------------------ toggle music --------------- */
+const music = document.querySelector(".music");
+let audio = document.getElementById("myAudio");
+alert("Nhớ bật nhạc ở góc phải để chill nhen - 💕 Kim Thi 💕")
+music.addEventListener("click", function () {
+    if (this.classList.contains("pause")) {
+        audio.play();
+    } else {
+        audio.pause();
+    }
+    this.classList.toggle("pause");
+});
